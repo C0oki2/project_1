@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sub.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="fixed"></div>
+
+
+            <form>
+                <div>
+                    <h1>Aesop</h1>
+                </div>
+
+                <div>
+                    <input type="text" id="serch" name="serch" value="" placeholder="럭키박스 출시 1+1 행운의 주인공은?">
+                    <button style="border: none;"> <img style="width: 20px; height: 20px;" src="img/돋보기.png"
+                            alt="돋보기"></button>
+                </div>
+
+                <div>
+                    <img src="img/login_button2.jpg" alt="">
+                </div>
+            </form>
+
+            <!--------------------------------------------------------------------------->
+            <nav>
+                <!-- <button></button> -->
+                <ul>
+                    <!-- <li><a href = "#">특가</a></li> -->
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">쇼케이스</a></li>
+                    <li><a href="#">라이브</a></li>
+                    <li><a href="#">FOR ME</a></li>
+                </ul>
+
+            </nav>
+
+            <hr>
+
+        </header>
+        
+
+<!---상품 설명과 상품이미지가 담겨있는 slider박스 섹션-->
+        <section id="sub_slider" style="width: 100%; height: 838px;">
+            <div style="width: 1206px; height: 767px;">
+                <div>
+                    <!--상품이미지 큰 박스-->
+                    <figure style="width: 473px; height: 711px; background-color: aqua">
+                        <img src="img/sub_slider.png" alt="상품이미지">
+                        <div style="width: 372px; height: 57px;">
+                            <p style="color: #000;"><b>결제/카드 혜택</b></p>
+                            <p style="font-size: 12px; color: #333;">롯데카드 터치하고 5천원 결제일 할인 받으세요!</p>
+                        </div>
+                        <div style="margin-top: 100px;">
+                            <p style="color: #000;"><b>관련 이벤트</b></p>
+                            <p style="font-size: 12px; color: #333;">24.1.12~24.1.31 회사원 A가 Aesop에 떴다! 콜라겐 세라마이드 크림 기획전
+                            </p>
+                        </div>
+                    </figure>
+
+
+                    <!--상품 설명 큰 박스-->
+                    <figure style="width: 640px; height: 716px; background-color: #00bc70;">
+
+                        <!-- <p style="font-size: 25px; margin-top: 30px; "> <b>BEST</b> [회사원A] 콜라겐 세라마이드 크림 <br>50mL + 블랙티
+                            앰플 30mL</p>-->
+
+
+
+                        <!--50,500 가격 큰 박스-->
+                        <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+
+                            <!-- <div>
+                                <span style="font-size: 20px;">50,500</span>
+                                <span style="font-size: 16px; color: red;">34%</span>
+                                <span style="font-size: 17px; color: #333;"></span>
+                            </div> -->
+
+                            <!--    <div>
+                                <img src="img/star.jpg" alt="star">
+                                <span><b>4.9</b></span>
+                                <a href="#" style="color: #333;">10,420건 리뷰</a>
+                            </div>
+                        </div>-->
+
+                            <!--증정혜택 큰 박스-->
+                            <!--증정혜택부터 배송비까지 담겨있음-->
+
+                            <div style="height: 131px; display:block; line-height: 25px; 
+                                    font-size: 13px; color: #333; margin-left: 70px;">
+                                <table style="text-align: left; margin-top: 50px; margin-bottom: 50px;">
+                                    <tr>
+                                        <td> <span
+                                                style="background-color: #ddfbef; color: #73d8c8; margin-left: 30px;
+                                                border-radius: 5px; ">증정</span>
+                                        </td>
+                                        <td></td>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" style="font-size: 25px;
+                                width: 600px; line-height: 30px; margin-bottom: 50px;"> <b>BEST</b> [회사원A] 콜라겐 세라마이드
+                                            크림50mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">50,500 34% 77,000</td>
+                                        <td> </td>
+                                        <td><img src="img/star.jpg" alt="star"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>증정혜택</td>
+                                        <td></td>
+                                        <td>[회사원A] 콜라겐 탄력장벽 크림 10mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>24.1.9 ~ 24.1.11</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>[회사원A] 콜라겐 탄력장벽 크림 10mL</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><br></td>
+                                    </tr>
+                                    <tr>
+                                        <td>뷰티포인트</td>
+                                        <td></td>
+                                        <td>결제 금액의 1% 적립</td>
+                                    </tr>
+                                    <tr>
+                                        <td>배송비</td>
+                                        <td></td>
+                                        <td>무료배송</td>
+                                    </tr>
+                                    <table>
+                            </div>
+
+
+
+                            <!--수량 담기와 버튼-->
+                            <hr style=" width:600px; color: #e8e8e8;">
+                            <p style="margin: 20px auto;font-size: 13px;">OPTION</p>
+                            <select style="width: 500px; height: 40px; border-color: #bdbdbd;
+                            border-radius: 10px;">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+
+                            <div id="add_button" style="width: 590px; height: 54px; 
+                            display: flex;   margin-top: 50px;">
+
+                                <button style="width: 51px; height: 54px;  background-color: #333333;">
+                                    <img style="width: 50px; height: 50px;" src="img/link.JPG" alt="link"></button>
+                                <button style="width: 51px; height: 54px;  background-color: #333333;">
+                                    <img style="width: 50px; height: 50px;" src="img/heart.JPG" alt="heart"></button>
+                                <button style="width: 224px; height: 54px; background-color: #000">
+                                    <p style="color: white;">장바구니</p>
+                                </button>
+                                <button style="width: 224px; height: 54px; ">
+                                    <p style="color: white;">바로구매</p>
+                                </button>
+                            </div>
+
+                    </figure>
+
+                </div>
+            </div>
+
+      </section>
+
+      <br><br><br><br><hr style="width:1206px; margin-left: -600px;">
+
+<!---->
+
+
+
+    <section id = "keywords" style="width: 1206px; height: 173px; background-color: yellow; margin-left: -600px;">
+        <span><b>탄력꿀조합! 지친 피부의 컨디션을 빠르게 케어해 주는 집중 안티에이징 블랙티 앰플과 피부 탄력장벽을 강화해 주는 콜라겐 크림!</b></span> <br>
+      <div>
+        <div>#안티에이징앰플</div>
+        <div>#피부결개선</div>
+        <div>#확신의앰플</div>
+        <div>#탄력장벽</div>
+        <div>#콜라겐</div>
+        <div>#세라마이드</div>
+     </div>
+    </section>
+
+<!--상세 정보 리뷰 유의사항 문의 버튼 -->
+    <section id = "review">
+        <ul>
+        <li><a href="#">상세 정보</a></li>
+        <li><a href="#"></a>리뷰</li>
+        <li><a href="#"></a>유의사항</li>
+        <li><a href="#"></a>문의</li>
+        </ul>
+    </section>
+
+</div>
+</body>
+
+</html>

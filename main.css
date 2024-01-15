@@ -1,0 +1,643 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0;}
+
+
+/*내비게이션 부분*/
+
+ul, ol, li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+
+
+header {
+    width: 1206px;
+    height: 75px;
+    margin: 0 auto;
+    /*background-color: yellow;*/
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px; }
+
+nav {width: 40%; height: 50px; /*background-color: pink;*/
+}
+
+nav .main_menu {width: 100%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+nav .main_menu>li{position: relative; font-size: 25px;}
+nav .sub_menu { width:100px; position: absolute; top: 50px; left: 0; z-index: 5; background-color: aqua;
+    display: none;}
+
+#logo {width: 20%; height: 100%;
+font-size: 50px;
+padding-left: 100px;
+font-weight: bold;}
+
+
+
+
+
+/*배너 부분*/
+
+#banner {
+
+    width:100%;
+    height:800px;
+    overflow: hidden;
+    position: relative; }
+
+
+  #banner
+    { background-image: url(img/banner.jpg);
+     width: 100%;
+     position: relative;
+    height: 800px;
+    animation: brandstory_img 150s linear infinite;
+    background-repeat: repeat-x; }
+
+    #banner::before{content:""; width:100%;
+         height:100%; 
+         top:0; left:0; background: #000000; opacity:0.4;}
+
+
+    @keyframes brandstory_img {
+
+            0%   {background-position:10%;}
+            50%  {background-position:50%;}
+            100%  {background-position:100%;}		  
+           }
+
+
+    #banner h2 {
+            font-size: 60px;
+            color: white;
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+           margin: 0 auto;
+           margin-top: 20%;
+        
+        }
+
+
+        #banner button {
+
+             width: 250px;
+             height: 40px;
+            border-radius: 30px;
+            background-color: rgba(0, 0,0, 0);
+            border: solid white 3px;
+            margin-top: 30px;
+            display: inline-block;
+            z-index: 10;
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        } 
+
+
+/*배너 아래 브랜드 스토리*/
+
+
+
+
+#brandstory{
+    width : 100%;
+    height:806px;
+    background-color: #c7d7c7;
+    position: relative;
+    margin: 0 auto;
+    /* border-radius: 20px; */
+ 
+    overflow: hidden;
+
+  
+  
+}
+
+
+
+
+#brandstory div:nth-of-type(1) {
+
+    width: 50%; height: 100%;
+    background-color: blue;
+    position: absolute;
+    /* display: inline-block; */
+    margin-top: 0;
+    top: 0;
+    /* left: 100; */
+    background-image: url("img/223.JPG");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 10%;
+
+    /* border-radius: 20px 0px 0px 20px; */
+
+    
+
+}
+
+#brandstory div:nth-of-type(1):hover {
+    filter: grayscale(100%);
+    -webkit-filter:grayscale(100%);
+    transition-duration: 1s;
+}
+
+
+#brandstory div:nth-of-type(2) {
+    position: relative; }
+   
+
+#brandstory div:nth-of-type(2) > div {
+   
+    background-color: white;
+    position: absolute;
+    top:40px;
+    left: 0;
+    margin-left: 52%;
+    font-size: 30px;
+}
+ 
+
+#brandstory div:nth-of-type(2) > div.per > p {
+
+    font-size: 30px;
+}
+
+
+
+
+/*브랜드 스토리 아래 베스트 상품 추천*/
+
+#best {
+    width: 100%;
+    height: 950px;
+    background-color:#fbfaf5;
+    margin: 0 auto;
+
+}
+
+#best h2 {
+    margin-bottom: -90px;
+}
+
+#best > div:nth-of-type(1) { position: relative;
+background-color:#fbfaf5;
+width: 1206px;
+height: 900px;
+top:20px;
+margin: 0 auto;
+
+
+}
+
+
+
+label {
+    font-size: 25px;
+    float: left;
+    margin-top: 120px;
+    margin-left: 20%;
+    color: #5f5f5f; 
+    
+}
+
+
+
+
+h3 {
+    color: #333;
+    margin: 18px;
+}
+
+p { font-size: 16px;
+    color:#333;
+    text-align: left;}
+
+
+
+input[type="radio"] { visibility: hidden;}
+
+
+.slider_align {
+    width: 1206px;
+    height: 545px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 30%;
+    display: block;
+}
+
+.slider_align .box {
+    width:380px;
+    height: 575px;
+    background-color:#fbfaf5;
+    float: left;
+}
+
+
+.slider_align .box:hover {transform:scale(1.1);}
+
+
+.slider_align .box:nth-of-type(1) {margin-left: 0px;}
+
+.m {margin: 0 32.5px 0 32.5px;}
+
+
+.slider_align .box>img {
+   position: relative;
+   width: 100%;
+   height: 380px;
+   top: 0;
+   left: 0;
+   border-radius: 20px;
+}
+
+/* .slider_align:nth-of-type(1) {
+    display: block;
+    position: absolute;
+} */
+
+.slider_align:not(:nth-of-type(1)) {
+    display: none;
+}
+
+
+input[id="ch_1"]:checked ~ .slider_align:nth-of-type(1) {display: block;}
+input[id="ch_2"]:checked ~ .slider_align:nth-of-type(2) {display: block;}
+input[id="ch_3"]:checked ~ .slider_align:nth-of-type(3) {display: block;}
+
+input[id="ch_1"]:checked ~ label:nth-of-type(1) {color: #808080;}
+input[id="ch_2"]:checked ~ label:nth-of-type(2) {color: #808080;}
+input[id="ch_3"]:checked ~ label:nth-of-type(3) {color: #808080;}
+
+
+
+
+/*넘어가는 기사 슬라이드*/
+
+
+
+#Articles h2 {text-align: center;}
+
+.Articles {
+    position: relative;
+   overflow:hidden;
+   
+   width : 1206px;
+   height:736px;
+   /* background-color: #fbfaf5; */
+   margin: 0 auto;
+
+   border-radius: 20px;
+ 
+   }
+   
+  .Articles > div {
+     position:absolute;
+    top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   
+   animation : slider2 12s infinite;
+   }
+   
+   
+   .Articles > div:nth-child(1) {
+   background-image: url(img/slider2-1.jpg);
+   animation-delay: 0s;
+   }
+   
+   
+   .Articles > div:nth-child(2) {
+   background-image: url(img/slider2-2.jpg);
+   
+   animation-delay: -4s;
+   }
+   
+   .Articles > div:nth-child(3) {
+    background-image: url(img/slider2-3.jpg);
+   
+   animation-delay: -8s;
+   }
+   
+   
+   @keyframes slider2 {
+     0% {
+       transform: translateX(0);
+     }
+   
+     26% {
+       transform: translateX(0);
+     }
+     33% {
+       transform: translateX(-100%);
+       animation-timing-function: step-end;
+     }
+     93% {
+       transform: translateX(100%);
+     }
+   
+     100% {
+       transform: translateX(0);
+     }
+   }
+   
+
+  
+   /*세 개 배열된 기사*/
+
+   #article3parts{
+    width : 1206px;
+    height:304px;
+    margin-top: 135px;
+    /* background-color: #fbfaf5; */
+    /* background-color: #fbfaf5; */
+    position: relative;
+   margin: 0 auto;  
+
+}
+
+#article3parts div {
+
+    width : 1204px;
+    height: 234px;
+    /* background-color:#fbfaf5; */
+    position: relative;
+    top: 20%;
+   margin: 0 auto;
+
+   
+
+}
+
+#article3parts div > div {
+      
+    position: relative;
+    float: left;
+    background-color: #e6eee4;
+    width: 392px;
+    height: 234px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    margin-left: 7px;
+    box-shadow: #cfcfcf 0px 3px 3px;
+
+}
+
+#article3parts div > div > div
+{/* background-color: blue; */
+   width: 150px;
+height: 150px;
+position: absolute;
+display: inline-block;
+top: 20%;
+left: 1%;
+}
+
+#article3parts div > div > div > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+
+
+}
+
+
+#article3parts div > div > p {
+
+   position: absolute;
+    
+    right: 5px;
+    font-size: 12px;
+
+    top: 15%;
+
+ 
+
+
+}
+
+
+
+#article3parts div > div > form {
+
+
+    
+   position: absolute;
+    
+   right: 20px;
+
+
+}
+
+/*상품 목록*/
+
+#products {
+    width: 100%;
+    height: 1400px;
+    position: relative;
+    /* background-color: #e6eee4; */
+    /* padding: 10px 0px 0px 0px; */
+     
+}
+
+form {
+    width: 1206px;
+    height: 1150px;
+    /* background-color: #e6eee4; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3%;
+    /* border:#333 dashed 2px  0px; */
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 50px;
+    color: #464646;
+    font-weight: lighter;
+    
+}
+
+form div {
+width: 380px;
+height: 535px;
+/* background-color: #e6eee4; */
+border-radius: 20px;
+/* box-shadow: rgb(188, 188, 188) 2px 2px;  */
+
+}
+
+form div > img {
+    width: 380px;
+    height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+
+/*오프라인 매장 파트*/
+
+#store {
+    margin: 8%;
+}
+
+
+#store div {
+
+  
+    width: 1206px;
+    height: 713px;
+    position: relative;
+    /* background-color: red; */
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(../../img/store.jpg);
+    background-repeat: no-repeat;
+    border-radius: 20% 0px 0px 0px;
+    border: #969696 solid 3px;
+}
+
+#store div > img {
+    position: relative;
+
+}
+
+#store div > h2 {float: right;
+position: absolute;
+left: 67%;
+top : 20%;}
+
+#store_button {
+ width: 300px;
+ height: 50px;
+ color: blue;
+ position: absolute;
+ left: 66%;
+ top: 52%;
+ border-radius: 20px;
+ background-color: rgba(0, 0, 0, 0);
+
+}
+
+#store_button {
+    font-size: 20px;
+    color: #333;
+}
+
+
+/*footer 위에 있는 이메일 박스*/
+
+/*e-mail*/
+
+#e-mail {
+    width: 1206px;
+    margin: 0 auto;
+    height: 275px;
+    /* border: #333 solid 5px 0px; */
+    position: relative;
+    
+}
+
+#e-mail div {
+
+    position: absolute;
+    margin-left: 4%;
+    font-size: 40px;
+
+}
+
+#e-mail div > p {font-size: 25px; margin-top: 10px;}
+
+#e-mail div > #text {width: 500px; height: 30px; border-radius: 10px;}
+
+#e-mail div > #button {
+    
+    background-color: rgba(0,0,0,0);
+    width: 50px;
+     height: 50px;
+     margin-left: -12%;
+     font-size: 30px;
+     top :230px;
+     border: #ffffff;}
+
+
+     #e-mail img {float: right;}
+
+
+     /*footer.css*/
+
+footer {
+    width: 100%;
+    height: 320px;
+    background-color: #d8e4d6;
+    
+}
+
+#content {
+    width: 1206px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+    position: relative;
+}
+
+
+
+footer div {
+
+   
+    width: 200px;
+    height: 230px;
+    background-color: #d8e4d6;
+    align-content: center;
+ 
+
+}
+
+
+
+footer div > h5 {
+    color: #000000;
+    font-size: 17px;
+}
+
+
+
+footer div > p {
+    color: #000000;
+    font-size: 15px;
+
+    
+}
+
+
+footer #content div:last-of-type {
+    width: 100%;
+    height: auto;
+}
+footer #content div:last-of-type p {
+    text-align: center;
+}

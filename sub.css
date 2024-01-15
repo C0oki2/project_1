@@ -1,0 +1,164 @@
+/*header*/
+
+
+#wrap {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 1206px;
+    height: 118px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;}
+
+ form { 
+    width: 1206px;
+    height: 40px;
+    /* background-color: yellowgreen; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+ }   
+
+ form div { width :auto; height: 50px;}
+
+ h1 {width: 40px; 
+     display: inline-block;
+     margin-right: 95px;
+    }
+
+ #serch { background-color: white;
+          border: none; /* 모든 방향의 보더 초기화 */
+          border-bottom: 3px solid #333;
+          width: 500px;
+          height: 40px;}
+/*------------------------------------------------------*/
+
+ nav {
+    width: 1206px;
+    height: 40px;
+    /* background-color: palevioletred; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; }
+
+
+ul, li {list-style: none;  }
+a {text-decoration: none; color: #333;}
+
+ ul { width: 500px; height: 30px; 
+      display: flex; flex-wrap: nowrap; justify-content: space-around;}
+ li { float:left;/* background-color: red; */}
+
+/*------------------------------------------------------*/
+
+#sub_slider {
+    /*slider 파트*/
+    display: flex;
+    align-items: center;
+}
+
+#sub_slider > div {
+    /*상품 이미지 큰 박스와 상품 설명 큰 박스를 포함한 대형박스*/
+ 
+     /*background-color: green;*/ 
+    margin: 0 auto;
+    display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+#sub_slider > div > div {
+   /* slider 안 상품이미지랑 상품 설명 가로로 배열*/
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#sub_slider > div > div > figure:nth-of-type(1) {
+    /*slider 상품이미지쪽 큰 박스*/
+    position: relative;
+    
+}
+
+/*-------위에는 안 건드려도 됨---------------------------------*/
+
+
+#sub_slider > div > div > figure:nth-of-type(1) > div {
+/*상품 이미지 밑의 결제/카드 혜택 , 관련 이벤트 설명란*/
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 56px;
+
+}
+
+
+
+/*증정혜택 쪽은 html에 함*/
+/*리뷰쪽도...*/
+/*헤더쪽 width heigh 옮겨야함*/
+
+
+#add_button > button
+{border:none;}
+
+
+
+#keywords {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#keywords > div {
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#keywords > div > div {
+    width: 110px;
+    height: 30px;
+    border: 3px solid #00bc70;
+    border-radius: 20px;
+    text-align: center;
+    color: #00bc70;
+    margin-left: 3px;
+}
+
+/*상세 정보 리뷰 유의사항 문의 버튼*/
+
+#review > ul > li {
+
+    width: 100px;
+    height: 0px;
+
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#review > ul {
+
+    width: 1206px;
+    height: 50px;
+
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* background-color: red; */
+margin-left: -600px;
+
+
+}
